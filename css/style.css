@@ -1,0 +1,223 @@
+:root {
+    --yasil: #54d154;
+}
+html { scroll-behavior: smooth }
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background: url('../img/headerbg.jpg') center/cover;
+    padding: 5px 30px
+}
+
+#menu li a {
+    font: normal 1rem "Proxima Nova";
+    color: #fff;
+    /* font-weight: ;
+    font-family: ; */
+}
+h1 {
+    font: bold 2rem Montserrat;
+    color: #fff;
+    text-transform: capitalize;
+}
+h2 {
+    font: 1.3rem Montserrat;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #828181;
+    font-family: "Montserrat";
+    padding: 10px;
+}
+h6 {
+    font: normal 1rem "Myriad Pro";
+    color: #b7b3b3;
+    padding: 10px
+}
+.bgyasil h2 { color: #1f7b1f }
+.bgyasil h6 { color: #2b9b2b }
+hr {
+  width: 43px;
+  height: 2px;
+  background-color: #828181;
+  margin: auto;
+} 
+.bgyasil hr { background-color: #1f7b1f; }
+
+#search { display: flex }
+
+#search * {
+    background: #ffffffcc;
+    height: 27px;
+    padding: 5px 15px;
+    border: none;
+    outline: none ;
+}
+#search input:first-child { border-radius: 15px 0 0 15px; }
+#search input:last-child { 
+    border-radius: 0 15px 15px 0;
+    background: #ffffffcc url('../img/magnifying-glass.svg') center/1rem no-repeat ; 
+}
+
+main > section { 
+    padding: 40px;
+    text-align: center; 
+}
+.arts { padding: 40px 10px }
+.arts article { padding: 20px 0; }
+.icon {
+    display: flex;
+    margin: auto;
+    background-color: #e0f3e0;
+    width: 140px;
+    height: 140px;
+    border-radius: 25px;
+ }
+
+.icon i {
+    margin: auto;
+    color: var(--yasil);
+    font-size: 4.5em;
+}
+
+.btns { 
+    display: flex; 
+    width: 100%; 
+    padding: 50px;
+    justify-content: center; 
+}
+.btns button {
+    height: 33px;
+    border: 1px solid #2b9b2b;
+    background: #fff;
+    font: normal 1rem "Proxima Nova";
+    color: #2b9b2b;
+    padding: 6px 20px;
+}
+.btns button:first-child { border-radius: 18px 0 0 18px; }
+.btns button:last-child { border-radius: 0 18px 18px 0;  }
+
+.btns button:hover, .btns button.active { background: #2b9b2b; color: #fff  }
+
+.bgyasil { background-color: var(--yasil) }
+.bgboz { background-color: #f1f1f1 }
+
+.imgs  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imgs img {
+    margin: 1rem;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+#title button{
+    border-radius: 35px;
+    background: var(--yasil);
+    border: none;
+    padding: 10px 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 20px;
+
+}
+
+#scroll button{
+    backdrop-filter: blur(2px);
+    border-radius: 35px;
+    border: none;
+    padding: 7px 10px;
+}
+
+.art1 h3{
+    font-size: 1.5rem;
+    padding: 10px 0;
+    color: #828181;
+}
+
+.art1 p{
+    color: #828181;
+    font-family: "Montserrat";
+    font-size: .9rem;
+}
+
+.art1 button{
+    background: var(--yasil);
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    margin:10px 0;
+    padding: 10px 15px;
+    letter-spacing: 1px;
+}
+.newbtn1{
+    font-size: 1,2rem;
+    color: #fff;
+    font-family: "Proxima Nova";
+    background:#2b9b2b;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 15px;
+    margin: 20px auto;
+}
+
+.testimonial{
+    flex-direction: column;
+}
+
+.testimonial p{
+    font-size: 1rem;
+    color: #444;
+    font-family: "Proxima Nova";
+    text-align: center;
+}
+
+.testimonial button{
+    background: transparent;
+    border: none;
+}
+
+
+.container1 h5{
+    font-size: 1rem;
+    color: #444;
+    text-align: center;
+    font-family: "Proxima Nova";
+
+}
+
+.container1 h6{
+    font-size: 1rem;
+    color: #ccc;
+    font-weight: bold;
+    font-family: "Proxima Nova";
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    nav { width: 100%;  display: flex;justify-content: space-between; }
+    h1 { font-size: 3.4rem }
+
+    #menu { display: flex;order: -1;}
+    #menu li { padding: 0 10px;}
+    #title button{ margin: 40px 0 0 0;}
+
+    .arts { display: flex }
+    .arts article { padding: 20px 40px; }
+    .imgs { max-width: 1000px; margin: auto }
+    .imgs img {width: 160px;height: 160px;}
+    .art1 h3{margin: 20px 0;}
+    .art1 button{ margin:30px 0; letter-spacing: 2px;}
+    .newbtn1{letter-spacing: 2px;margin: 50px 0; padding: 15px 20px;}
+    .testimonial{ display: flex; flex-direction: row; justify-content: space-around;}
+    .testitcent{width: 50%;}
+ 
+}
