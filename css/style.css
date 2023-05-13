@@ -1,5 +1,6 @@
 :root {
     --yasil: #54d154;
+    --yasil1:#2b9b2b;
 }
 html { scroll-behavior: smooth }
 header {
@@ -103,7 +104,12 @@ main > section {
 .btns button:hover, .btns button.active { background: #2b9b2b; color: #fff  }
 
 .bgyasil { background-color: var(--yasil) }
+.bgyasil1 { background-color: var(--yasil1) }
 .bgboz { background-color: #f1f1f1 }
+.bgboz1{background-color: #dddcdc;}
+
+.txtboz{color: #828181;}
+.txtag{    color: #fff;}
 
 .imgs  {
     display: flex;
@@ -160,9 +166,8 @@ main > section {
 }
 .newbtn1{
     font-size: 1,2rem;
-    color: #fff;
+
     font-family: "Proxima Nova";
-    background:#2b9b2b;
     border: none;
     border-radius: 25px;
     padding: 10px 15px;
@@ -186,12 +191,27 @@ main > section {
 }
 
 
+.testimonial .container1{
+    justify-content: center;
+}
+
+.container1 {
+    padding: 20px;
+    display: flex;
+  }
+  
+  
+  .text {
+    display: flex;
+    flex-direction: column;
+  }
+
+
 .container1 h5{
     font-size: 1rem;
     color: #444;
     text-align: center;
     font-family: "Proxima Nova";
-
 }
 
 .container1 h6{
@@ -200,6 +220,61 @@ main > section {
     font-weight: bold;
     font-family: "Proxima Nova";
     text-align: center;
+}
+
+.arrow{
+    rotate: 90deg;
+    padding: 20px 0;
+}
+
+.arrow1{
+    rotate: 90deg;
+    padding: 20px 0;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.image img{
+    width: 100%;
+    height: auto;
+    margin: 1rem;
+    padding:60px;
+    object-fit: cover;
+    filter: grayscale(1);
+}
+
+.actors{
+    display: flex;
+    flex-direction: column;;
+}
+
+.act1{
+    margin-bottom: 150px;
+}
+
+.actors div{
+    margin: 20px 0;
+    height: 20vh;
+
+}
+
+.actimg{
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+}
+
+.br25{
+    border-radius: 25%;
+}
+
+.br50{
+    border-radius: 50%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -212,12 +287,23 @@ main > section {
 
     .arts { display: flex }
     .arts article { padding: 20px 40px; }
+
     .imgs { max-width: 1000px; margin: auto }
     .imgs img {width: 160px;height: 160px;}
+
     .art1 h3{margin: 20px 0;}
     .art1 button{ margin:30px 0; letter-spacing: 2px;}
+    
     .newbtn1{letter-spacing: 2px;margin: 50px 0; padding: 15px 20px;}
     .testimonial{ display: flex; flex-direction: row; justify-content: space-around;}
+
+    .image{max-width: 1000px;margin: auto;align-items: center;}
+    .image img{ max-width: 25%; margin: auto;}
+
     .testitcent{width: 50%;}
- 
+
+    .arrow  {rotate: initial;}
+    .arrow1{rotate: initial;}
+
+    .actors{flex-direction: row;}
 }
