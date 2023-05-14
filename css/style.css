@@ -107,9 +107,12 @@ main > section {
 .bgyasil1 { background-color: var(--yasil1) }
 .bgboz { background-color: #f1f1f1 }
 .bgboz1{background-color: #dddcdc;}
+.bgorange{background-color: #ffba00;}
+.bgblue{background-color: #089cea;}
+.bgred{background-color: #f34c03;}
 
 .txtboz{color: #828181;}
-.txtag{    color: #fff;}
+.txtag{color: #fff;}
 
 .imgs  {
     display: flex;
@@ -250,17 +253,19 @@ main > section {
 
 .actors{
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.actors h6{
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    font-family: "Proxima Nova";
 }
 
 .act1{
-    margin-bottom: 150px;
-}
-
-.actors div{
-    margin: 20px 0;
-    height: 20vh;
-
+    margin: 40px 0;
 }
 
 .actimg{
@@ -269,12 +274,116 @@ main > section {
     height: 160px;
 }
 
-.br25{
-    border-radius: 25%;
+.section6ft{
+    display: flex;
+    background: #3eba3e;
+    justify-content: center;
 }
 
-.br50{
-    border-radius: 50%;
+.newbtn2{
+    font-size: 1,2rem;
+    font-family: "Proxima Nova";
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 25px;
+    padding: 10px 15px;
+    margin: 15px auto;
+}
+
+.footer{
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about {
+    align-items: center;
+}
+
+.footer1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ll1{
+    display: flex;
+
+    padding: 20px 0;
+}
+
+.footer1 img{
+    width: 60px;
+    height: 60px;
+    
+}
+
+.textsfooter{
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.footer1 p{
+    font-size: 1rem;
+    color: #ccc;
+    font-weight: 300;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+
+.footer h5{
+    font-size: 1rem;
+    letter-spacing: 3px;
+    color: #ddd;
+    font-family: "Montserrat";
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact{
+    align-items: center;
+}
+
+.about p{
+    padding: 30px 20px;
+}
+
+.immg{
+    display: flex;
+    justify-content: center;
+}
+
+.contact p{
+    padding: 30px 20px ;
+}
+
+.footer p{
+    font-size: 1rem;
+    color: #ccc;
+    font-family: "Proxima Nova";
+    text-align: center;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form input{
+    width: 260px;
+}
+
+form input,textarea{
+    margin: 5px 0;
+    background: #434343;
+    border: none;
+    font-size: 1rem;
+    color: #777;
+    font-family: "Proxima Nova";
 }
 
 @media only screen and (min-width: 768px) {
@@ -306,4 +415,13 @@ main > section {
     .arrow1{rotate: initial;}
 
     .actors{flex-direction: row;}
+    .act1{margin: 20px 40px;}
+
+    .actimg{width: 100%;}
+
+    .footer{flex-direction: row;}
+    .contact{width: 30%; padding: 0 40px;}
+    .footer1{width: 30%;}
+    .about  {width: 30%; padding: 0 40px;}
+
 }
