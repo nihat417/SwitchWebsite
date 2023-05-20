@@ -369,13 +369,13 @@ main > section {
     text-align: center;
 }
 
-form{
+.neww1{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-form input{
+.neww1 input{
     min-width:260px;
 }
 
